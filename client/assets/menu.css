@@ -1,4 +1,30 @@
-#menu-list, #menu-link, #app {-webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out;}
+.menulist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+
+li {
+    float: left;
+}
+
+li Link {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li Link:hover {
+    background-color: #333;
+}
+
+
+
+/*#menu-list, #menu-link, #app {-webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out;}
 #menu-list {margin-left: -150px; width: 150px; position: fixed; top: 0; left: 0; bottom: 0; z-index: 1000; background: #191818; overflow-y: auto; -webkit-overflow-scrolling: touch;}
 #menu-list .pure-menu li a, #menu-list .pure-menu li span {color: #999; border: none; padding: 0.6em 0 0.6em 0.6em; display: block; line-height: 1.5em; text-decoration: none; white-space: nowrap;}
 #menu-list .pure-menu li a:hover, #menu-list .pure-menu li span:hover, #menu-list .pure-menu li a:focus, #menu-list .pure-menu li span:focus {background: #333; color: white; cursor: pointer;}
@@ -24,4 +50,4 @@
   #app {left: 0; padding-left: 150px;}
   #app.show-menu #menu-link {left: 150px;}
   #menu-list {left: 150px;}
-}
+}*/
