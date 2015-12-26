@@ -41,7 +41,8 @@ module.exports = React.createClass({
               <li><Link to="posts">IndyPharmacyBlog</Link></li>
               <li><Link to="contact">Contact Us</Link></li>
               <li><Link to="about">About</Link></li>
-            </ul>
+              {signingLink}
+          </ul>
           </div>
         </div>
       </div>

@@ -29,7 +29,21 @@ module.exports = React.createClass({
  handleMenuClick: function() {
    this.setState({showMenu: !this.state.showMenu});
  },
-
+ writeToAPI: function(method, url, data, successFunction) {
+    Reqwest({
+      url: url,
+      data: data,
+      type: 'json',
+      method: method,
+      contentType: 'application/json',
+      headers: {'Authorization': sessionStorage.getItem('jwt')},
+      success: successFunction,
+      error: function(error) {
+        console.error(url, error['response']);
+        location = '/';
+      }
+    });
+  },
   readFromAPI: function(url, successFunction) {
     Reqwest({
       url: url,

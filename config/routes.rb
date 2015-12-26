@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'current_user', to: 'application#current_user'
   get 'request_token', to: 'tokens#request_token'
   get 'access_token', to: 'tokens#access_token'
-  
-  resources :posts, only:[:index]
+
+  resources :posts, only:[:index, :create, :save]
 
 end
