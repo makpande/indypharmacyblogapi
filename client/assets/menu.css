@@ -6,6 +6,8 @@
     background-color: #333;
 }
 
+.pure-menu-heading{text-align: center; text-decoration-color: green;}
+
 li {
     float: left;
     border-right:1px solid #bbb;

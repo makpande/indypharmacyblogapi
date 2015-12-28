@@ -33,7 +33,7 @@ module.exports = React.createClass({
     return (
       <div id="menu">
         <span id="menu-link" onClick={this.props.sendMenuClick}><span></span></span>
-        <div id="menu-list">
+        <div id="menulist">
           <div className="pure-menu pure-menu-open">
             <span className="pure-menu-heading">IndyPharmacy</span>
             <ul>

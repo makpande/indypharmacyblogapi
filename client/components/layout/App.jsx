@@ -25,7 +25,21 @@ module.exports = React.createClass({
        this.setState({signedIn: true, currentUser: user});
      }.bind(this));
    },
+   readFromAPI: function(url, successFunction) {
+     Reqwest({
+       url: url,
+       type: 'json',
+       method: 'get',
+       contentType: 'application/json',
+       success: successFunction,
+       headers: {'Authorization': sessionStorage.getItem('jwt')},       
+       error: function(error) {
+         console.error(url, error['response']);
+         location = '/';
 
+       }
+     });
+   },
  handleMenuClick: function() {
    this.setState({showMenu: !this.state.showMenu});
  },
@@ -44,21 +58,7 @@ module.exports = React.createClass({
       }
     });
   },
-  readFromAPI: function(url, successFunction) {
-    Reqwest({
-      url: url,
-      type: 'json',
-      method: 'get',
-      contentType: 'application/json',
-      success: successFunction,
-      headers: {'Authorization': sessionStorage.getItem('jwt')},
-      error: function(error) {
-        console.error(url, error['response']);
-        location = '/';
 
-      }
-    });
-  },
   render: function () {
     var menu = this.state.showMenu ? 'show-menu' : 'hide-menu';
     return (
