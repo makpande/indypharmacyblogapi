@@ -1,6 +1,7 @@
 require('./assets/app.css');
 require('./assets/menu.css');
 require('./assets/posts.css');
+require('./assets/topics.css');
 require('./assets/static.css');
 
 var React = require('react');

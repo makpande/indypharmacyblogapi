@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get 'access_token', to: 'tokens#access_token'
 
   resources :posts, only:[:index, :create, :save]
-
+  resources :topics, only:[:index]
 end

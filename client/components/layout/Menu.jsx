@@ -23,7 +23,7 @@ module.exports = React.createClass({
             <span className="pure-menu-heading">My Pharmacy</span>
             <ul>
               <li><Link to="home">Home</Link></li>
-              <li><Link to="posts">IndyPharmacyBlog</Link></li>
+              <li><Link to="topics">IndyPharmacyBlog</Link></li>
               <li><Link to="contact">Contact Us</Link></li>
               <li><Link to="about">About</Link></li>
               {signingLink}
