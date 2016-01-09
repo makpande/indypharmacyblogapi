@@ -25,7 +25,7 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div className="postview">
-        <h1>Needs to push into main body</h1>
+        <h1>Topics</h1>
         <PostsForm writePostToAPI={this.writePostToAPI} signedIn={this.props.signedIn} />
         <PostsList data={this.state.data} />
       </div>

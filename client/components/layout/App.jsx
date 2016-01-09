@@ -32,7 +32,7 @@ module.exports = React.createClass({
        method: 'get',
        contentType: 'application/json',
        success: successFunction,
-       headers: {'Authorization': sessionStorage.getItem('jwt')},       
+       headers: {'Authorization': sessionStorage.getItem('jwt')},
        error: function(error) {
          console.error(url, error['response']);
          location = '/';

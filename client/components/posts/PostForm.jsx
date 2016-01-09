@@ -15,11 +15,13 @@ module.exports = React.createClass({
   },
   render: function() {
     return (
+      <div className="container">
       <form className="post-form pure-form" onSubmit={this.handleSubmit}>
         <input type="text" placeholder="post title " ref="title" />
         <input type="text" placeholder="post description " ref="body" />
         <button type="submit" className="pure-button pure-button-primary">Post</button>
       </form>
+    </div>
     );
   }
 });

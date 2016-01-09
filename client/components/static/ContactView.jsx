@@ -6,6 +6,7 @@ module.exports = React.createClass({
       <div id="contact-view">
         <h1>Contact</h1>
         <p>Our contact is at Bloc.io.</p>
+        <i class="fa fa-circle fa-stack-2x"></i>
       </div>
     );
   }
